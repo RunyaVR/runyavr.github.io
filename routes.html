@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+        Fichier 	: routes.html
+        Description     : Routes
+        Date            : 6/12/2024	
+        Auteur 		: Frédéric Dufossé
+        Groupe		: 323AI
+-->
+<html lang="fr">
+    <head>
+        <!-- Pour le support des caractères accentués -->
+        <meta charset="utf-8">
+        <!-- Pour la portabilité - "Responsive Web Design" -->		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta-données -->
+        <meta name="description" content="Routes">
+        <meta name="author" content="Frédéric Dufossé">
+        <!-- Titre de la page -->
+        <title>Routes</title>
+        <!-- Lien vers la feuille de style CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" >
+        <link rel="shortcut icon" href="images/logo.png" >
+        <script src="javascript/jquery.min.js"></script>
+        <script>
+            function toggleDiv(divId) {
+                $("#" + divId).toggle();
+                /*Redirection vers le lien interne de la page.*/
+                /*window.location.href = ("#" + divId);*/
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav id="HAUT">
+                    <a href="index.html">Accueil</a>
+                    <a href="personnages.html">Personnages</a>
+                    <a href="routes.html">Routes</a>
+                    <a href="mods.html">Mods</a>
+                    <a href="liens.html">Liens</a>
+                    <a href="formulaire.html">Formulaire</a>
+                    <div class="animation start-routes"></div>
+                </nav>
+                <br><br>
+            </header>
+            <main>
+                <!-- Acte 1 -->
+                <section>
+                    <img class="cg" src="images/cg_1.png" alt="Natsuki CG 1">
+                    <h2>Acte 1</h2>
+                    <p>
+                        L'acte 1 consiste principalement à essayer de faire des avances romantiques à trois des quatres filles, soit Sayori, Yuri et Natsuki.
+                        C'est le seul acte sans aucun élément d'horreur, parce que Monika n'a pas encore commencé à brisé le jeu ou à modifier la personnalité des autres filles en jouant avec le code du jeu.
+                        À l'exception de Sayori qui se suicide à cause des manipulations de fichiers de Monika, le début du jeu est comme n'importe quel autre roman graphique avec tout les stéréotypes qu'on pourrait s'attendre à voir dans une romance.
+                    </p>
+                    <hr class="lignenatsuki">
+                </section>
+                <!-- Acte 2 -->
+                <h1>
+                    <a class="liensdiv" href="javascript:toggleDiv('acte2');">Acte 2 Spoilers</a>
+                </h1>
+                <div id="acte2">
+                    <section>
+                        <img class="cg" src="images/cg_3.png" alt="Yuri CG 1">
+                        <h2>Acte 2</h2>
+                        <p>
+                            L'acte 2 marque le tournant de l'histoire où le jeu passe d'un roman graphique à l'apparence innocente à un jeu d'horreur psychologique.
+                            Sayori est complètement absente de cet acte, donnant quelques indices que son personnage aurait été, d'une façon ou d'une autre, effacé des fichiers du jeu par Monika.
+                            Dans cette partie du jeu, Monika révèle sa personnalité obsessionnelle et elle essaie de modifier les dialogues de Natsuki et Yuri dans l'objectif de les rendre moins appréciables.
+                        </p>
+                        <hr class="ligneyuri">
+                    </section>
+                </div>
+                <!-- Acte 3 -->
+                <h1>
+                    <a class="liensdiv" href="javascript:toggleDiv('acte3');">Acte 3 Spoilers</a>
+                </h1>
+                <div id="acte3">
+                    <section>
+                        <img class="cg" src="images/cg_10.png" alt="Monika CG 1">
+                        <h2>Acte 3</h2>
+                        <p>
+                            Après avoir effacé tous les autres personnages du jeu, Monika est maintenant la seule chose à exister dans une classe vide qui flotte dans l'espace.
+                            Elle explique que tout ce qui est arrivé depuis le début du jeu est en fait son œuvre.
+                            Elle est capable de modifier les fichiers du jeu et elle est au courant qu'elle est coincée dans un jeu.
+                        </p>
+                        <br><br><br><br>
+                        <hr class="lignemonika">
+                    </section>
+                </div>
+                <!-- Acte 4 -->
+                <h1>
+                    <a class="liensdiv" href="javascript:toggleDiv('acte4');"> Acte 4 Spoilers</a>
+                </h1>
+                <div id="acte4">
+                    <section>
+                        <img class="cg" src="images/cg_9.png" alt="Sayori CG 3">
+                        <h2>Acte 4</h2>
+                        <p>
+                            L'acte 4 est le quatrième et dernier acte de Doki Doki Literature Club!. Dans cet acte, tout dans le monde semble être de retour à la normale, avec l'exception de l'absence de Monika.
+                            Le protagoniste décide de joindre le club de littérature de sa propre volonté et en rencontrant Yuri et Natsuki, qui semble être de bonne humeur, Sayori le convint de rester pour remplir le minimum de membres requis pour que le club de littérature soit officiel.
+                        </p>
+                        <br>
+                        <hr class="lignesayori">
+                    </section>
+                </div>
+                <br><br><br>
+            </main>
+        </div>
+        <footer>
+            <img src="images/ddlcfooter.png" alt="DDLC">
+            <a class="monika" href="#HAUT">Retour en haut de la page</a>
+        </footer>
+    </body>
+</html>
